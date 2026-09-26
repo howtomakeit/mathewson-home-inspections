@@ -1,0 +1,34 @@
+RewriteEngine On
+
+# Keep the existing indexed URLs useful during the visual refresh.
+Redirect 301 /mathewson/ /about.html
+Redirect 301 /home-inspection-defined/ /services.html
+Redirect 301 /mold-inspection/ /services.html#specialty
+Redirect 301 /certification-page/ /about.html#credentials
+Redirect 301 /inspection-guarantee/ /services.html#process
+Redirect 301 /buying-a-home/ /buying.html
+Redirect 301 /selling-your-home/ /selling.html
+Redirect 301 /samples/ /reports.html
+Redirect 301 /client-reviews/ /reviews.html
+Redirect 301 /prices/ /pricing.html
+Redirect 301 /get-your-report/ /reports.html
+Redirect 301 /your-report/ /reports.html
+Redirect 301 /links/ /resources.html
+Redirect 301 /radon-information/ /resources.html
+Redirect 301 /mold-information/ /resources.html
+Redirect 301 /ashi/ /about.html#credentials
+Redirect 301 /creia/ /about.html#credentials
+Redirect 301 /roofing-exterior/ /services.html
+Redirect 301 /structural/ /services.html
+Redirect 301 /interiors-and-garage/ /services.html
+Redirect 301 /plumbing/ /services.html
+Redirect 301 /electrical/ /services.html
+Redirect 301 /heating-cooling/ /services.html
+Redirect 301 /insulation-and-appliances/ /services.html
+
+# Basic security and canonical host behavior; confirm with Hostinger before launch.
+Options -Indexes
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
